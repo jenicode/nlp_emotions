@@ -2,13 +2,7 @@ import streamlit as st
 import nlp
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 import tensorflow as tf
-
-from datetime import datetime
-from sklearn.metrics import confusion_matrix
-import warnings
-warnings.filterwarnings('ignore')
 
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
