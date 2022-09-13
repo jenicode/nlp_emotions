@@ -15,7 +15,7 @@ tweets = [d['text'] for d in dataset['train']] + [d['text'] for d in dataset['te
 tokenizer = Tokenizer(num_words=10000, oov_token='<UNK>')
 tokenizer.fit_on_texts(tweets)
 max_length = 70 # from the trained model
-nums_to_names = {0: 'anger', 1: 'sadness', 2: 'surprise', 3: 'love', 4: 'fear', 5: 'joy'}
+nums_to_names = {0: 'fear', 1: 'love', 2: 'anger', 3: 'joy', 4: 'surprise', 5: 'sadness'}
 
 def get_padded_sequences(pred_sentences, tokenizer):
     ### get_sequences
